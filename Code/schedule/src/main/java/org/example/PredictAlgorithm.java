@@ -39,7 +39,7 @@ public class PredictAlgorithm {
                 instance.setValue(2, instances.getValue().get(i).get(k + 2));
                 trainingDataset.add(instance);
             }
-            Classifier targetFunction = new SimpleLinearRegression();
+            Classifier targetFunction = new LinearRegression();
             targetFunction.buildClassifier(trainingDataset);
 
             Instances unlabeledInstances = new Instances("prediction set", attributes, 3);

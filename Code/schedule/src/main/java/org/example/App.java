@@ -11,7 +11,10 @@ public class App
             Pair<List<String>, List<List<Integer>>> a = Parsers.predParse("pred.xlsx");
             ArrayList<Double> result;
             try {
-                result = PredictAlgorithm.linearRegression(a,2024, 5);
+                int year, week;
+                year = 2024;
+                week = 7;
+                result = PredictAlgorithm.linearRegression(a,year,week);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
