@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
-public class ExcelPredParser {
+public class Parsers {
 
-    public static Pair<List<String>, List<List<Integer>>> parse(String fileName) {
+    public static Pair<List<String>, List<List<Integer>>> predParse(String fileName) {
         //инициализируем потоки
         InputStream inputStream = null;
         XSSFWorkbook workBook = null;
