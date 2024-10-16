@@ -1,23 +1,21 @@
 package org.example;
 
 import javafx.util.Pair;
+import weka.classifiers.Classifier;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class App
 {
-        public static void main( String[] args )  {
+        public static void main( String[] args ) throws Exception {
             Pair<List<String>, List<List<Integer>>> a = Parsers.predParse("pred.xlsx");
-            ArrayList<Double> result;
-            try {
-                int year, week;
-                year = 2024;
-                week = 7;
-                result = PredictAlgorithm.linearRegression(a,year,week);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println(result.toString());
+            ArrayList<Classifier> result = new ArrayList<>();
+            result = PredictAlgorithm.linearRegression(a);
+            System.out.println("finish");
+            File z = new File("a");
+            MatrixToCSV abc = new MatrixToCSV();
+            abc.convert(a);
         }
 }

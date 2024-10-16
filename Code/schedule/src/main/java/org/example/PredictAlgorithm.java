@@ -15,17 +15,15 @@ import java.util.List;
 
 public class PredictAlgorithm {
 
-    public static ArrayList<Double> linearRegression(Pair<List<String>, List<List<Integer>>> instances, int year, int week) throws Exception {
-        ArrayList<Double> prediction = new ArrayList<>();
-        prediction.add((double) year);
-        prediction.add((double) week);
+    public static ArrayList<Classifier> linearRegression(Pair<List<String>, List<List<Integer>>> instances) throws Exception {
+        ArrayList<Classifier> targetFunctions = new ArrayList<>();
         for (int k = 0; k < instances.getKey().size() - 2; k++) {
             ArrayList<Attribute> attributes = new ArrayList<>();
             for (int i = 0; i < 2; i++) {
-                Attribute a = new Attribute(instances.getKey().get(i).toString());
+                Attribute a = new Attribute(instances.getKey().get(i));
                 attributes.add(a);
             }
-            Attribute a = new Attribute(instances.getKey().get(k + 2).toString());
+            Attribute a = new Attribute(instances.getKey().get(k + 2));
             attributes.add(a);
 
             Instances trainingDataset = new Instances("train data", attributes, 3 );
@@ -42,6 +40,7 @@ public class PredictAlgorithm {
             Classifier targetFunction = new LinearRegression();
             targetFunction.buildClassifier(trainingDataset);
 
+            /* Предикт
             Instances unlabeledInstances = new Instances("prediction set", attributes, 3);
             unlabeledInstances.setClassIndex(trainingDataset.numAttributes() - 1);
             Instance unlabeled = new DenseInstance(3);
@@ -50,8 +49,10 @@ public class PredictAlgorithm {
             unlabeled.setValue(1, week);
             unlabeledInstances.add(unlabeled);
             double predict = targetFunction.classifyInstance(unlabeledInstances.get(0));
-            prediction.add(predict);
+             */
+
+            targetFunctions.add(targetFunction);
         }
-        return prediction;
+        return targetFunctions;
     }
 }
