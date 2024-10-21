@@ -66,6 +66,24 @@
       <version>4.1</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.deeplearning4j</groupId>
+      <artifactId>deeplearning4j-core</artifactId>
+      <version>1.0.0-M2.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math3</artifactId>
+      <version>3.6.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.signaflo</groupId>
+      <artifactId>timeseries</artifactId>
+      <version>0.4</version>
+    </dependency>
+
   </dependencies>
 </project>
 
