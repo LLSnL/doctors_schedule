@@ -1,19 +1,25 @@
 package org.example;
 
-import java.io.IOException;
-import java.sql.Time;
-import java.util.ArrayList;
-import java.util.function.DoubleFunction;
-
 import com.github.signaflo.math.operations.DoubleFunctions;
-import com.github.signaflo.timeseries.TestData;
 import com.github.signaflo.timeseries.TimeSeries;
 import com.github.signaflo.timeseries.forecast.Forecast;
-import com.github.signaflo.timeseries.model.Model;
 import com.github.signaflo.timeseries.model.arima.Arima;
 import com.github.signaflo.timeseries.model.arima.ArimaOrder;
+import org.knowm.xchart.XChartPanel;
+import org.knowm.xchart.XYChart;
+import org.knowm.xchart.XYChartBuilder;
+import org.knowm.xchart.XYSeries;
+import org.knowm.xchart.style.Styler;
+import org.knowm.xchart.style.markers.Circle;
+import org.nd4j.shade.guava.primitives.Doubles;
 
-import static com.github.signaflo.data.visualization.Plots.plot;
+import javax.swing.*;
+import java.awt.*;
+import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 public class App
 {
@@ -160,13 +166,41 @@ public class App
         ArimaOrder modelOrder = ArimaOrder.order(0, 2, 1, 0, 1, 1);
         Arima model = Arima.model(timeSeries, modelOrder);
 
-        System.out.println(model.aic()); // Get and display the model AIC
         System.out.println(model.coefficients()); // Get and display the estimated coefficients
         System.out.println(java.util.Arrays.toString(model.stdErrors()));
-        plot(model.predictionErrors());
-        plot(model.observations());
 
-        Forecast forecast = model.forecast(1);
+        Thread plotThread = new Thread(() -> {
+            List<Date> xAxis = new ArrayList(timeSeries.observationTimes().size());
+            Iterator var4 = timeSeries.observationTimes().iterator();
+
+            while(var4.hasNext()) {
+                OffsetDateTime dateTime = (OffsetDateTime)var4.next();
+                xAxis.add(Date.from(dateTime.toInstant()));
+            }
+
+            List<Double> seriesList = Doubles.asList(DoubleFunctions.round(timeSeries.asArray(), 2));
+            List<Double> predictionList = Doubles.asList(DoubleFunctions.round(model.fittedSeries().asArray(), 2));
+            XYChart chart = ((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)(new XYChartBuilder()).theme(Styler.ChartTheme.GGPlot2)).height(600)).width(800)).title("Сравнение")).build();
+
+            chart.addSeries("Исходные данные", xAxis, seriesList);
+            XYSeries series = chart.addSeries("Предсказание", xAxis, predictionList);
+            series.setXYSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Scatter);
+            //chart.addSeries("Предсказание", xAxis, predictionList);
+/*            residualSeries.setXYSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Scatter);
+            residualSeries.setMarker(new Circle()).setMarkerColor(Color.RED);
+            resiSeries.setXYSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Scatter);
+            resiSeries.setMarker(new Circle()).setMarkerColor(Color.BLACK);*/
+
+            JPanel panel = new XChartPanel(chart);
+            JFrame frame = new JFrame("Сравнение");
+            frame.setDefaultCloseOperation(2);
+            frame.add(panel);
+            frame.pack();
+            frame.setVisible(true);
+            });
+        plotThread.start();
+
+        Forecast forecast = model.forecast(3);
         System.out.println(forecast);
     }
 }
