@@ -72,7 +72,17 @@ public class App
         System.out.println(model.coefficients()); // Get and display the estimated coefficients
         System.out.println(java.util.Arrays.toString(model.stdErrors()));
 
-        Thread plotThread = new Thread(() -> {
+        List<Double> seriesList = Doubles.asList(DoubleFunctions.round(timeSeries.asArray(), 2));
+        List<Double> predictionList = Doubles.asList(DoubleFunctions.round(model.fittedSeries().asArray(), 2));
+
+        List<Double> deltaLow = new ArrayList<>();
+        List<Double> deltaHigh = new ArrayList<>();
+        for (int i = 0; i < 109; i++) {
+            deltaLow.add(Math.pow(Math.pow((predictionList.get(i)), 2) -  Math.pow(low.get(i),2), 0.5));
+            deltaHigh.add(Math.pow(Math.pow((high.get(i)), 2) -  Math.pow(predictionList.get(i),2), 0.5));
+        }
+
+/*        Thread plotThread = new Thread(() -> {
             List<Date> xAxis = new ArrayList(timeSeries.observationTimes().size());
             Iterator var4 = timeSeries.observationTimes().iterator();
 
@@ -81,8 +91,6 @@ public class App
                 xAxis.add(Date.from(dateTime.toInstant()));
             }
 
-            List<Double> seriesList = Doubles.asList(DoubleFunctions.round(timeSeries.asArray(), 2));
-            List<Double> predictionList = Doubles.asList(DoubleFunctions.round(model.fittedSeries().asArray(), 2));
             XYChart chart = ((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)(new XYChartBuilder()).theme(Styler.ChartTheme.GGPlot2)).height(1000)).width(1200)).title("Сравнение")).build();
 
             chart.addSeries("Исходные данные", xAxis, seriesList);
@@ -108,7 +116,33 @@ public class App
             frame.pack();
             frame.setVisible(true);
             });
-        plotThread.start();
+        plotThread.start();*/
+
+        Thread plotThread2 = new Thread(() -> {
+            List<Date> xAxis = new ArrayList(timeSeries.observationTimes().size());
+            Iterator var4 = timeSeries.observationTimes().iterator();
+
+            while(var4.hasNext()) {
+                OffsetDateTime dateTime = (OffsetDateTime)var4.next();
+                xAxis.add(Date.from(dateTime.toInstant()));
+            }
+
+            XYChart chart = ((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)((XYChartBuilder)(new XYChartBuilder()).theme(Styler.ChartTheme.GGPlot2)).height(1000)).width(1200)).title("Дельты")).build();
+
+            chart.addSeries("Low", xAxis, deltaLow);
+            XYSeries series1 = chart.addSeries("High", xAxis, deltaHigh);
+           // series1.setXYSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Scatter);
+            series1.setMarkerColor(Color.BLUE);
+            series1.setLineColor(Color.BLUE);
+
+            JPanel panel = new XChartPanel(chart);
+            JFrame frame = new JFrame("Дельты");
+            frame.setDefaultCloseOperation(2);
+            frame.add(panel);
+            frame.pack();
+            frame.setVisible(true);
+        });
+        plotThread2.start();
 
         Forecast forecast = model.forecast(3);
         System.out.println(forecast);
