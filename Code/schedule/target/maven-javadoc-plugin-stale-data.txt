@@ -1,0 +1,267 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/Пользователь/.m2/repository/nz/ac/waikato/cms/weka/weka-stable/3.8.6/weka-stable-3.8.6.jar;C:/Users/Пользователь/.m2/repository/com/github/vbmacher/java-cup/11b-20160615/java-cup-11b-20160615.jar;C:/Users/Пользователь/.m2/repository/com/github/vbmacher/java-cup-runtime/11b-20160615/java-cup-runtime-11b-20160615.jar;C:/Users/Пользователь/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar;C:/Users/Пользователь/.m2/repository/com/googlecode/matrix-toolkits-java/mtj/1.0.4/mtj-1.0.4.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/all/1.1.2/all-1.1.2.pom;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/jniloader/1.1/jniloader-1.1.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1-natives.jar;C:/Users/Пользователь/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar;C:/Users/Пользователь/.m2/repository/com/googlecode/netlib-java/netlib-java/1.1/netlib-java-1.1.jar;C:/Users/Пользователь/.m2/repository/com/github/fommil/netlib/core/1.1/core-1.1.jar;C:/Users/Пользователь/.m2/repository/com/github/fracpete/jfilechooser-bookmarks/0.1.6/jfilechooser-bookmarks-0.1.6.jar;C:/Users/Пользователь/.m2/repository/com/github/fracpete/jclipboardhelper/0.1.0/jclipboardhelper-0.1.0.jar;C:/Users/Пользователь/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar;C:/Users/Пользователь/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar;C:/Users/Пользователь/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar;C:/Users/Пользователь/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar;C:/Users/Пользователь/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar;C:/Users/Пользователь/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.1/xmlbeans-5.2.1.jar;C:/Users/Пользователь/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-controls/17.0.1/javafx-controls-17.0.1.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-controls/17.0.1/javafx-controls-17.0.1-win.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-graphics/17.0.1/javafx-graphics-17.0.1.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-graphics/17.0.1/javafx-graphics-17.0.1-win.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-base/17.0.1/javafx-base-17.0.1.jar;C:/Users/Пользователь/.m2/repository/org/openjfx/javafx-base/17.0.1/javafx-base-17.0.1-win.jar;C:/Users/Пользователь/.m2/repository/org/apache/poi/poi-ooxml/5.3.0/poi-ooxml-5.3.0.jar;C:/Users/Пользователь/.m2/repository/org/apache/poi/poi/5.3.0/poi-5.3.0.jar;C:/Users/Пользователь/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar;C:/Users/Пользователь/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar;C:/Users/Пользователь/.m2/repository/org/apache/poi/poi-ooxml-lite/5.3.0/poi-ooxml-lite-5.3.0.jar;C:/Users/Пользователь/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar;C:/Users/Пользователь/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar;C:/Users/Пользователь/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar;C:/Users/Пользователь/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar;C:/Users/Пользователь/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar;C:/Users/Пользователь/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar;C:/Users/Пользователь/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar;C:/Users/Пользователь/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar;C:/Users/Пользователь/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;C:/Users/Пользователь/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-core/1.0.0-M2.1/deeplearning4j-core-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-datasets/1.0.0-M2.1/deeplearning4j-datasets-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/resources/1.0.0-M2.1/resources-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-datavec-iterators/1.0.0-M2.1/deeplearning4j-datavec-iterators-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-modelimport/1.0.0-M2.1/deeplearning4j-modelimport-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5-platform/1.12.1-1.5.7/hdf5-platform-1.12.1-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp-platform/1.5.7/javacpp-platform-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-android-arm.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-android-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-android-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-android-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-ios-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-ios-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-macosx-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacpp/1.5.7/javacpp-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/hdf5/1.12.1-1.5.7/hdf5-1.12.1-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-nn/1.0.0-M2.1/deeplearning4j-nn-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-utility-iterators/1.0.0-M2.1/deeplearning4j-utility-iterators-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/nd4j-native-api/1.0.0-M2.1/nd4j-native-api-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/nd4j-common/1.0.0-M2.1/nd4j-common-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/guava/1.0.0-M2.1/guava-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/it/unimi/dsi/fastutil/6.5.7/fastutil-6.5.7.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/nd4j-api/1.0.0-M2.1/nd4j-api-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/com/jakewharton/byteunits/byteunits/0.9.1/byteunits-0.9.1.jar;C:/Users/Пользователь/.m2/repository/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/protobuf/1.0.0-M2.1/protobuf-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar;C:/Users/Пользователь/.m2/repository/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0.jar;C:/Users/Пользователь/.m2/repository/org/nd4j/jackson/1.0.0-M2.1/jackson-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/org/datavec/datavec-api/1.0.0-M2.1/datavec-api-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar;C:/Users/Пользователь/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar;C:/Users/Пользователь/.m2/repository/com/clearspring/analytics/stream/2.9.8/stream-2.9.8.jar;C:/Users/Пользователь/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar;C:/Users/Пользователь/.m2/repository/com/tdunning/t-digest/3.2/t-digest-3.2.jar;C:/Users/Пользователь/.m2/repository/org/datavec/datavec-data-image/1.0.0-M2.1/datavec-data-image-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.3.0/jai-imageio-core-1.3.0.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-jpeg/3.1.1/imageio-jpeg-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-core/3.1.1/imageio-core-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-metadata/3.1.1/imageio-metadata-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/common/common-lang/3.1.1/common-lang-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/common/common-io/3.1.1/common-io-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/common/common-image/3.1.1/common-image-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-tiff/3.1.1/imageio-tiff-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-psd/3.1.1/imageio-psd-3.1.1.jar;C:/Users/Пользователь/.m2/repository/com/twelvemonkeys/imageio/imageio-bmp/3.1.1/imageio-bmp-3.1.1.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/javacv/1.5.7/javacv-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/flycapture/2.13.3.31-1.5.7/flycapture-2.13.3.31-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/libdc1394/2.2.6-1.5.7/libdc1394-2.2.6-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/libfreenect/0.5.7-1.5.7/libfreenect-0.5.7-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/libfreenect2/0.2.0-1.5.7/libfreenect2-0.2.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/librealsense/1.12.4-1.5.7/librealsense-1.12.4-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/librealsense2/2.50.0-1.5.7/librealsense2-2.50.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/videoinput/0.200-1.5.7/videoinput-0.200-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/artoolkitplus/2.3.1-1.5.7/artoolkitplus-2.3.1-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/flandmark/1.07-1.5.7/flandmark-1.07-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/tesseract/5.0.1-1.5.7/tesseract-5.0.1-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv-platform/4.5.5-1.5.7/opencv-platform-4.5.5-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas-platform/0.3.19-1.5.7/openblas-platform-0.3.19-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-android-arm.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-android-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-android-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-android-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-ios-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-ios-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-macosx-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/openblas/0.3.19-1.5.7/openblas-0.3.19-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-android-arm.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-android-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-android-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-android-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-ios-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-ios-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-macosx-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/opencv/4.5.5-1.5.7/opencv-4.5.5-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica-platform/1.82.0-1.5.7/leptonica-platform-1.82.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-android-arm.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-android-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-android-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-android-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/leptonica/1.82.0-1.5.7/leptonica-1.82.0-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg-platform/5.0-1.5.7/ffmpeg-platform-5.0-1.5.7.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-android-arm.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-android-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-android-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-android-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-linux-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-linux-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-linux-armhf.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-linux-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-linux-ppc64le.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-macosx-arm64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-macosx-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-windows-x86.jar;C:/Users/Пользователь/.m2/repository/org/bytedeco/ffmpeg/5.0-1.5.7/ffmpeg-5.0-1.5.7-windows-x86_64.jar;C:/Users/Пользователь/.m2/repository/org/deeplearning4j/deeplearning4j-ui-components/1.0.0-M2.1/deeplearning4j-ui-components-1.0.0-M2.1.jar;C:/Users/Пользователь/.m2/repository/com/github/oshi/oshi-json/3.4.2/oshi-json-3.4.2.jar;C:/Users/Пользователь/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar;C:/Users/Пользователь/.m2/repository/com/github/oshi/oshi-core/3.4.2/oshi-core-3.4.2.jar;C:/Users/Пользователь/.m2/repository/net/java/dev/jna/jna-platform/4.3.0/jna-platform-4.3.0.jar;C:/Users/Пользователь/.m2/repository/net/java/dev/jna/jna/4.3.0/jna-4.3.0.jar;C:/Users/Пользователь/.m2/repository/org/threeten/threetenbp/1.3.3/threetenbp-1.3.3.jar;C:/Users/Пользователь/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar;C:/Users/Пользователь/.m2/repository/com/github/signaflo/timeseries/0.4/timeseries-0.4.jar;C:/Users/Пользователь/.m2/repository/com/github/signaflo/math/0.4/math-0.4.jar;C:/Users/Пользователь/.m2/repository/org/knowm/xchart/xchart/3.8.8/xchart-3.8.8.jar;C:/Users/Пользователь/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar;C:/Users/Пользователь/.m2/repository/de/rototor/pdfbox/graphics2d/3.0.1/graphics2d-3.0.1.jar;C:/Users/Пользователь/.m2/repository/org/apache/pdfbox/pdfbox/3.0.1/pdfbox-3.0.1.jar;C:/Users/Пользователь/.m2/repository/org/apache/pdfbox/pdfbox-io/3.0.1/pdfbox-io-3.0.1.jar;C:/Users/Пользователь/.m2/repository/org/apache/pdfbox/fontbox/3.0.1/fontbox-3.0.1.jar;C:/Users/Пользователь/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar;C:/Users/Пользователь/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar;C:/Users/Пользователь/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar;C:/Users/Пользователь/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar;C:/Users/Пользователь/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar;C:/Users/Пользователь/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar;C:/Users/Пользователь/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.9'
+-sourcepath
+'D:/5 Курс/doctors_schedule/Code/schedule/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024 <a href="http://www.apache.org/">Apache Software Foundation</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/5 Курс/doctors_schedule/Code/schedule/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Apache POI - OOXML schemas (full) 5.3.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/9/docs/api' 'D:/5 Курс/doctors_schedule/Code/schedule/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Apache POI - OOXML schemas (full) 5.3.0 API'
+org.example
+C:\Users\Пользователь\.m2\repository\nz\ac\waikato\cms\weka\weka-stable\3.8.6\weka-stable-3.8.6.jar = 1728493262838
+C:\Users\Пользователь\.m2\repository\com\github\vbmacher\java-cup\11b-20160615\java-cup-11b-20160615.jar = 1728493261047
+C:\Users\Пользователь\.m2\repository\com\github\vbmacher\java-cup-runtime\11b-20160615\java-cup-runtime-11b-20160615.jar = 1728493260985
+C:\Users\Пользователь\.m2\repository\nz\ac\waikato\cms\weka\thirdparty\bounce\0.18\bounce-0.18.jar = 1728493261127
+C:\Users\Пользователь\.m2\repository\com\googlecode\matrix-toolkits-java\mtj\1.0.4\mtj-1.0.4.jar = 1728493261133
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\all\1.1.2\all-1.1.2.pom = 1728493252614
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-osx-x86_64\1.1\netlib-native_ref-osx-x86_64-1.1-natives.jar = 1728493262160
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\native_ref-java\1.1\native_ref-java-1.1.jar = 1728493263599
+C:\Users\Пользователь\.m2\repository\com\github\fommil\jniloader\1.1\jniloader-1.1.jar = 1728493263934
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-linux-x86_64\1.1\netlib-native_ref-linux-x86_64-1.1-natives.jar = 1728493262396
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-linux-i686\1.1\netlib-native_ref-linux-i686-1.1-natives.jar = 1728493263762
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-win-x86_64\1.1\netlib-native_ref-win-x86_64-1.1-natives.jar = 1728493263331
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-win-i686\1.1\netlib-native_ref-win-i686-1.1-natives.jar = 1728493264869
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_ref-linux-armhf\1.1\netlib-native_ref-linux-armhf-1.1-natives.jar = 1728493263866
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-osx-x86_64\1.1\netlib-native_system-osx-x86_64-1.1-natives.jar = 1728493264147
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\native_system-java\1.1\native_system-java-1.1.jar = 1728493265640
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-linux-x86_64\1.1\netlib-native_system-linux-x86_64-1.1-natives.jar = 1728493264378
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-linux-i686\1.1\netlib-native_system-linux-i686-1.1-natives.jar = 1728493264768
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-linux-armhf\1.1\netlib-native_system-linux-armhf-1.1-natives.jar = 1728493265238
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-win-x86_64\1.1\netlib-native_system-win-x86_64-1.1-natives.jar = 1728493265570
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\netlib-native_system-win-i686\1.1\netlib-native_system-win-i686-1.1-natives.jar = 1728493265903
+C:\Users\Пользователь\.m2\repository\net\sourceforge\f2j\arpack_combined_all\0.1\arpack_combined_all-0.1.jar = 1728493266162
+C:\Users\Пользователь\.m2\repository\com\googlecode\netlib-java\netlib-java\1.1\netlib-java-1.1.jar = 1728493265853
+C:\Users\Пользователь\.m2\repository\com\github\fommil\netlib\core\1.1\core-1.1.jar = 1728493266069
+C:\Users\Пользователь\.m2\repository\com\github\fracpete\jfilechooser-bookmarks\0.1.6\jfilechooser-bookmarks-0.1.6.jar = 1728493266270
+C:\Users\Пользователь\.m2\repository\com\github\fracpete\jclipboardhelper\0.1.0\jclipboardhelper-0.1.0.jar = 1728493266328
+C:\Users\Пользователь\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar = 1728493266499
+C:\Users\Пользователь\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar = 1728493266375
+C:\Users\Пользователь\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar = 1728493266455
+C:\Users\Пользователь\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.5\jaxb-runtime-2.3.5.jar = 1728493266805
+C:\Users\Пользователь\.m2\repository\org\glassfish\jaxb\txw2\2.3.5\txw2-2.3.5.jar = 1728493266458
+C:\Users\Пользователь\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar = 1727727104387
+C:\Users\Пользователь\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar = 1727727103518
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-controls\17.0.1\javafx-controls-17.0.1.jar = 1643887046492
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-controls\17.0.1\javafx-controls-17.0.1-win.jar = 1643887047542
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-graphics\17.0.1\javafx-graphics-17.0.1.jar = 1643887046343
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-graphics\17.0.1\javafx-graphics-17.0.1-win.jar = 1643887048671
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-base\17.0.1\javafx-base-17.0.1.jar = 1643887046382
+C:\Users\Пользователь\.m2\repository\org\openjfx\javafx-base\17.0.1\javafx-base-17.0.1-win.jar = 1643887046756
+C:\Users\Пользователь\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar = 1727727978129
+C:\Users\Пользователь\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar = 1727727977125
+C:\Users\Пользователь\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar = 1727725524906
+C:\Users\Пользователь\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar = 1727727977281
+C:\Users\Пользователь\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar = 1727727978158
+C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar = 1727725525094
+C:\Users\Пользователь\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar = 1727727978264
+C:\Users\Пользователь\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar = 1727727978270
+C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar = 1727727978354
+C:\Users\Пользователь\.m2\repository\com\opencsv\opencsv\4.1\opencsv-4.1.jar = 1729093250241
+C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar = 1729093250221
+C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-text\1.1\commons-text-1.1.jar = 1729093250244
+C:\Users\Пользователь\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar = 1729093250339
+C:\Users\Пользователь\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar = 1729093250296
+C:\Users\Пользователь\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar = 1727725526429
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-core\1.0.0-M2.1\deeplearning4j-core-1.0.0-M2.1.jar = 1729515539145
+C:\Users\Пользователь\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar = 1729515538918
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-datasets\1.0.0-M2.1\deeplearning4j-datasets-1.0.0-M2.1.jar = 1729515539022
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\resources\1.0.0-M2.1\resources-1.0.0-M2.1.jar = 1729515688192
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-datavec-iterators\1.0.0-M2.1\deeplearning4j-datavec-iterators-1.0.0-M2.1.jar = 1729515539188
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-modelimport\1.0.0-M2.1\deeplearning4j-modelimport-1.0.0-M2.1.jar = 1729515539491
+C:\Users\Пользователь\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar = 1729515549259
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7.jar = 1729515688056
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5-platform\1.12.1-1.5.7\hdf5-platform-1.12.1-1.5.7.jar = 1729515656416
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp-platform\1.5.7\javacpp-platform-1.5.7.jar = 1729515656754
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-android-arm.jar = 1729515540364
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-android-arm64.jar = 1729515540528
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-android-x86.jar = 1729515540577
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-android-x86_64.jar = 1729515540611
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-ios-arm64.jar = 1729515540707
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-ios-x86_64.jar = 1729515540752
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-linux-armhf.jar = 1729515540772
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-linux-arm64.jar = 1729515540882
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-linux-ppc64le.jar = 1729515540924
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-linux-x86.jar = 1729515540939
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-linux-x86_64.jar = 1729515541058
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-macosx-arm64.jar = 1729515541076
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-macosx-x86_64.jar = 1729515541094
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-windows-x86.jar = 1729515541644
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacpp\1.5.7\javacpp-1.5.7-windows-x86_64.jar = 1729515541305
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7.jar = 1729515541317
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-linux-x86.jar = 1729515543362
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-linux-x86_64.jar = 1729515541929
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-linux-armhf.jar = 1729515544052
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-linux-arm64.jar = 1729515544191
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-linux-ppc64le.jar = 1729515543374
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-macosx-x86_64.jar = 1729515544397
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-windows-x86.jar = 1729515546575
+C:\Users\Пользователь\.m2\repository\org\bytedeco\hdf5\1.12.1-1.5.7\hdf5-1.12.1-1.5.7-windows-x86_64.jar = 1729515547398
+C:\Users\Пользователь\.m2\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar = 1729515555042
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-nn\1.0.0-M2.1\deeplearning4j-nn-1.0.0-M2.1.jar = 1729515546096
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-utility-iterators\1.0.0-M2.1\deeplearning4j-utility-iterators-1.0.0-M2.1.jar = 1729515544903
+C:\Users\Пользователь\.m2\repository\org\nd4j\nd4j-native-api\1.0.0-M2.1\nd4j-native-api-1.0.0-M2.1.jar = 1729515546240
+C:\Users\Пользователь\.m2\repository\org\nd4j\nd4j-common\1.0.0-M2.1\nd4j-common-1.0.0-M2.1.jar = 1729515690549
+C:\Users\Пользователь\.m2\repository\org\nd4j\guava\1.0.0-M2.1\guava-1.0.0-M2.1.jar = 1729515548763
+C:\Users\Пользователь\.m2\repository\it\unimi\dsi\fastutil\6.5.7\fastutil-6.5.7.jar = 1729515558752
+C:\Users\Пользователь\.m2\repository\org\nd4j\nd4j-api\1.0.0-M2.1\nd4j-api-1.0.0-M2.1.jar = 1729515693713
+C:\Users\Пользователь\.m2\repository\com\jakewharton\byteunits\byteunits\0.9.1\byteunits-0.9.1.jar = 1729515550097
+C:\Users\Пользователь\.m2\repository\com\google\flatbuffers\flatbuffers-java\1.12.0\flatbuffers-java-1.12.0.jar = 1729515551700
+C:\Users\Пользователь\.m2\repository\org\nd4j\protobuf\1.0.0-M2.1\protobuf-1.0.0-M2.1.jar = 1729515555055
+C:\Users\Пользователь\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar = 1729515552429
+C:\Users\Пользователь\.m2\repository\net\ericaro\neoitertools\1.0.0\neoitertools-1.0.0.jar = 1729515552341
+C:\Users\Пользователь\.m2\repository\org\nd4j\jackson\1.0.0-M2.1\jackson-1.0.0-M2.1.jar = 1729515690571
+C:\Users\Пользователь\.m2\repository\org\datavec\datavec-api\1.0.0-M2.1\datavec-api-1.0.0-M2.1.jar = 1729515557789
+C:\Users\Пользователь\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar = 1729515555512
+C:\Users\Пользователь\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar = 1729515689954
+C:\Users\Пользователь\.m2\repository\com\clearspring\analytics\stream\2.9.8\stream-2.9.8.jar = 1729515556337
+C:\Users\Пользователь\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar = 1729515556532
+C:\Users\Пользователь\.m2\repository\com\tdunning\t-digest\3.2\t-digest-3.2.jar = 1729515556630
+C:\Users\Пользователь\.m2\repository\org\datavec\datavec-data-image\1.0.0-M2.1\datavec-data-image-1.0.0-M2.1.jar = 1729515556835
+C:\Users\Пользователь\.m2\repository\com\github\jai-imageio\jai-imageio-core\1.3.0\jai-imageio-core-1.3.0.jar = 1729515558295
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-jpeg\3.1.1\imageio-jpeg-3.1.1.jar = 1729515558427
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-core\3.1.1\imageio-core-3.1.1.jar = 1729515559816
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-metadata\3.1.1\imageio-metadata-3.1.1.jar = 1729515559690
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\common\common-lang\3.1.1\common-lang-3.1.1.jar = 1729515559875
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\common\common-io\3.1.1\common-io-3.1.1.jar = 1729515559840
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\common\common-image\3.1.1\common-image-3.1.1.jar = 1729515559903
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-tiff\3.1.1\imageio-tiff-3.1.1.jar = 1729515559434
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-psd\3.1.1\imageio-psd-3.1.1.jar = 1729515559626
+C:\Users\Пользователь\.m2\repository\com\twelvemonkeys\imageio\imageio-bmp\3.1.1\imageio-bmp-3.1.1.jar = 1729515559792
+C:\Users\Пользователь\.m2\repository\org\bytedeco\javacv\1.5.7\javacv-1.5.7.jar = 1729515560122
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7.jar = 1729515635252
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7.jar = 1729515575877
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7.jar = 1729515657243
+C:\Users\Пользователь\.m2\repository\org\bytedeco\flycapture\2.13.3.31-1.5.7\flycapture-2.13.3.31-1.5.7.jar = 1729515561020
+C:\Users\Пользователь\.m2\repository\org\bytedeco\libdc1394\2.2.6-1.5.7\libdc1394-2.2.6-1.5.7.jar = 1729515561210
+C:\Users\Пользователь\.m2\repository\org\bytedeco\libfreenect\0.5.7-1.5.7\libfreenect-0.5.7-1.5.7.jar = 1729515561483
+C:\Users\Пользователь\.m2\repository\org\bytedeco\libfreenect2\0.2.0-1.5.7\libfreenect2-0.2.0-1.5.7.jar = 1729515561489
+C:\Users\Пользователь\.m2\repository\org\bytedeco\librealsense\1.12.4-1.5.7\librealsense-1.12.4-1.5.7.jar = 1729515561694
+C:\Users\Пользователь\.m2\repository\org\bytedeco\librealsense2\2.50.0-1.5.7\librealsense2-2.50.0-1.5.7.jar = 1729515561932
+C:\Users\Пользователь\.m2\repository\org\bytedeco\videoinput\0.200-1.5.7\videoinput-0.200-1.5.7.jar = 1729515562101
+C:\Users\Пользователь\.m2\repository\org\bytedeco\artoolkitplus\2.3.1-1.5.7\artoolkitplus-2.3.1-1.5.7.jar = 1729515562290
+C:\Users\Пользователь\.m2\repository\org\bytedeco\flandmark\1.07-1.5.7\flandmark-1.07-1.5.7.jar = 1729515562467
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7.jar = 1729515636057
+C:\Users\Пользователь\.m2\repository\org\bytedeco\tesseract\5.0.1-1.5.7\tesseract-5.0.1-1.5.7.jar = 1729515563195
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv-platform\4.5.5-1.5.7\opencv-platform-4.5.5-1.5.7.jar = 1729515563261
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas-platform\0.3.19-1.5.7\openblas-platform-0.3.19-1.5.7.jar = 1729515563380
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-android-arm.jar = 1729515563923
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-android-arm64.jar = 1729515564651
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-android-x86.jar = 1729515564346
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-android-x86_64.jar = 1729515564850
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-ios-arm64.jar = 1729515564787
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-ios-x86_64.jar = 1729515565451
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-linux-x86.jar = 1729515574142
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-linux-x86_64.jar = 1729515574569
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-linux-armhf.jar = 1729515571463
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-linux-arm64.jar = 1729515573775
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-linux-ppc64le.jar = 1729515573922
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-macosx-arm64.jar = 1729515572572
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-macosx-x86_64.jar = 1729515582075
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-windows-x86.jar = 1729515592591
+C:\Users\Пользователь\.m2\repository\org\bytedeco\openblas\0.3.19-1.5.7\openblas-0.3.19-1.5.7-windows-x86_64.jar = 1729515597288
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-android-arm.jar = 1729515593036
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-android-arm64.jar = 1729515593571
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-android-x86.jar = 1729515598437
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-android-x86_64.jar = 1729515613867
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-ios-arm64.jar = 1729515613733
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-ios-x86_64.jar = 1729515620967
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-linux-x86.jar = 1729515628196
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-linux-x86_64.jar = 1729515615412
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-linux-armhf.jar = 1729515633046
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-linux-arm64.jar = 1729515634674
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-linux-ppc64le.jar = 1729515634758
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-macosx-arm64.jar = 1729515641423
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-macosx-x86_64.jar = 1729515653890
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-windows-x86.jar = 1729515655416
+C:\Users\Пользователь\.m2\repository\org\bytedeco\opencv\4.5.5-1.5.7\opencv-4.5.5-1.5.7-windows-x86_64.jar = 1729515657828
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica-platform\1.82.0-1.5.7\leptonica-platform-1.82.0-1.5.7.jar = 1729515635709
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-android-arm.jar = 1729515637981
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-android-arm64.jar = 1729515640935
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-android-x86.jar = 1729515644037
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-android-x86_64.jar = 1729515645176
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-linux-x86.jar = 1729515646995
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-linux-x86_64.jar = 1729515649021
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-linux-armhf.jar = 1729515650409
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-linux-arm64.jar = 1729515654244
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-linux-ppc64le.jar = 1729515654510
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-macosx-x86_64.jar = 1729515658597
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-windows-x86.jar = 1729515657597
+C:\Users\Пользователь\.m2\repository\org\bytedeco\leptonica\1.82.0-1.5.7\leptonica-1.82.0-1.5.7-windows-x86_64.jar = 1729515658217
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg-platform\5.0-1.5.7\ffmpeg-platform-5.0-1.5.7.jar = 1729515656532
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-android-arm.jar = 1729515672376
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-android-arm64.jar = 1729515667111
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-android-x86.jar = 1729515670987
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-android-x86_64.jar = 1729515673934
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-linux-x86.jar = 1729515670165
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-linux-x86_64.jar = 1729515677483
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-linux-armhf.jar = 1729515681092
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-linux-arm64.jar = 1729515683092
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-linux-ppc64le.jar = 1729515688018
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-macosx-arm64.jar = 1729515687501
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-macosx-x86_64.jar = 1729515688389
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-windows-x86.jar = 1729515693868
+C:\Users\Пользователь\.m2\repository\org\bytedeco\ffmpeg\5.0-1.5.7\ffmpeg-5.0-1.5.7-windows-x86_64.jar = 1729515694566
+C:\Users\Пользователь\.m2\repository\org\deeplearning4j\deeplearning4j-ui-components\1.0.0-M2.1\deeplearning4j-ui-components-1.0.0-M2.1.jar = 1729515688592
+C:\Users\Пользователь\.m2\repository\com\github\oshi\oshi-json\3.4.2\oshi-json-3.4.2.jar = 1729515690653
+C:\Users\Пользователь\.m2\repository\org\glassfish\javax.json\1.0.4\javax.json-1.0.4.jar = 1729515690869
+C:\Users\Пользователь\.m2\repository\com\github\oshi\oshi-core\3.4.2\oshi-core-3.4.2.jar = 1729515691275
+C:\Users\Пользователь\.m2\repository\net\java\dev\jna\jna-platform\4.3.0\jna-platform-4.3.0.jar = 1729515692693
+C:\Users\Пользователь\.m2\repository\net\java\dev\jna\jna\4.3.0\jna-4.3.0.jar = 1729515692185
+C:\Users\Пользователь\.m2\repository\org\threeten\threetenbp\1.3.3\threetenbp-1.3.3.jar = 1729515692726
+C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar = 1727727978604
+C:\Users\Пользователь\.m2\repository\com\github\signaflo\timeseries\0.4\timeseries-0.4.jar = 1729546570182
+C:\Users\Пользователь\.m2\repository\com\github\signaflo\math\0.4\math-0.4.jar = 1729546570031
+C:\Users\Пользователь\.m2\repository\org\knowm\xchart\xchart\3.8.8\xchart-3.8.8.jar = 1730157840242
+C:\Users\Пользователь\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar = 1730157839803
+C:\Users\Пользователь\.m2\repository\de\rototor\pdfbox\graphics2d\3.0.1\graphics2d-3.0.1.jar = 1730157839860
+C:\Users\Пользователь\.m2\repository\org\apache\pdfbox\pdfbox\3.0.1\pdfbox-3.0.1.jar = 1730157840120
+C:\Users\Пользователь\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.1\pdfbox-io-3.0.1.jar = 1730157839968
+C:\Users\Пользователь\.m2\repository\org\apache\pdfbox\fontbox\3.0.1\fontbox-3.0.1.jar = 1730157840394
+C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar = 1730157840183
+C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar = 1730157840529
+C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar = 1730157840461
+C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar = 1730157840731
+C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar = 1643887047078
+C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar = 1730157840405
+C:\Users\Пользователь\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar = 1730157840559
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java = 1729540073753
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\allclasses-index.html = 1734148105069
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\allpackages-index.html = 1734148105073
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\copy.svg = 1734148105123
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\element-list = 1734148104992
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\help-doc.html = 1734148105111
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\index-all.html = 1734148105100
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\index.html = 1734148105105
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\jquery-ui.overrides.css = 1734148105190
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\member-search-index.js = 1734148105084
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\module-search-index.js = 1734148105074
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\overview-tree.html = 1734148105053
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\package-search-index.js = 1734148105076
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\script.js = 1734148105120
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\search-page.js = 1734148105159
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\search.html = 1734148105103
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\search.js = 1734148105146
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\stylesheet.css = 1734148105115
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\tag-search-index.js = 1734148105087
+D:\5 Курс\doctors_schedule\Code\schedule\target\reports\apidocs\type-search-index.js = 1734148105081
