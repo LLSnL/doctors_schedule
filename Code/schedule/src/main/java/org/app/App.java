@@ -1,104 +1,104 @@
 package org.app;
 
-import javafx.util.Pair;
+import org.apache.commons.cli.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.*;
+import java.io.IOException;
 
 import org.analysis.Analysis;
-import org.apache.commons.math3.exception.OutOfRangeException;
-import org.schedule.Doctor;
 import org.schedule.GenerateSchedule;
-import org.schedule.WorkSchedule;
 
+public class App {
+    private static final Logger logger = LogManager.getLogger(App.class);
 
-public class App
-{
-    public static void main( String[] args ) throws Exception {
+    public static void main(String[] args) {
+        Options options = new Options();
 
-        System.out.println("Используйте команды:\n1)'getAnalysis p d q P D Q m' чтобы получить файл АнализДанных.xlsx с анализом работы алгоритма АРИМА (p,d... - параметры алгоритма - числа 0...3 - рекомендуется использовать параметры 3 0 3 1 1 0 0)" +
-                "\n2)'getDoctors' чтобы получить файл АнализДокторов.xlsx с анализом модальностей и часов работы докторов" +
-                "\n3)'forecast p d q P D Q m' чтобы получить предсказания на следующий месяц - оно запишется в файл ПредсказаниеНаМесяц.xlsx" +
-                "\n4)'getSchedule md' чтобы получить расписание врачей на месяц в файле РасписаниеВрачей.xlsx (md - количество дней в предсказуемом месяце)" +
-                "\n5)'end' чтобы закончить работу программы");
-        boolean prog = true;
-        while(prog){
-            Scanner in = new Scanner(System.in);
-            String input = in.nextLine();
-            String[] command = input.split(" ");
-            switch(command[0]){
-                case "getAnalysis": {
-                    int p ,d, q, P, D, Q, m;
-                    try{
-                        p = Integer.parseInt(command[1]);
-                        d = Integer.parseInt(command[2]);
-                        q = Integer.parseInt(command[3]);
-                        P = Integer.parseInt(command[4]);
-                        D = Integer.parseInt(command[5]);
-                        Q = Integer.parseInt(command[6]);
-                        m = Integer.parseInt(command[7]);
-                        if(p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 3 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3){
-                            throw new Exception("");
-                        }
-                        Analysis.analysisIntoExcel("pred.xlsx", p,d,q,P,D,Q,m);
-                    } catch (Exception e) {
-                        System.out.println("Команда не распознана/неподходящие параметры");
-                        break;
+        Option analysis = new Option("a", "analysis", true, "ARIMA parameters: p,d,q,P,D,Q,m");
+        analysis.setArgs(7);
+        options.addOption(analysis);
+
+        Option doctors = new Option("d", "doctors", false, "Generate doctors analysis");
+        options.addOption(doctors);
+
+        Option forecast = new Option("f", "forecast", true, "ARIMA parameters for forecast: p,d,q,P,D,Q,m");
+        forecast.setArgs(7);
+        options.addOption(forecast);
+
+        Option schedule = new Option("s", "schedule", true, "Generate schedule for given number of days");
+        schedule.setArgs(1);
+        options.addOption(schedule);
+
+        CommandLineParser parser = new DefaultParser();
+        HelpFormatter formatter = new HelpFormatter();
+        CommandLine cmd;
+
+        try {
+            cmd = parser.parse(options, args);
+
+            if (cmd.hasOption("analysis")) {
+                String[] analysisParams = cmd.getOptionValues("analysis");
+                try {
+                    int p = Integer.parseInt(analysisParams[0]);
+                    int d = Integer.parseInt(analysisParams[1]);
+                    int q = Integer.parseInt(analysisParams[2]);
+                    int P = Integer.parseInt(analysisParams[3]);
+                    int D = Integer.parseInt(analysisParams[4]);
+                    int Q = Integer.parseInt(analysisParams[5]);
+                    int m = Integer.parseInt(analysisParams[6]);
+
+                    if (p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 3 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3) {
+                        throw new Exception("");
                     }
-                    System.out.println("Команда выполнена. Файл АнализДанных.xlsx обновлён");
-                    break;
+                    Analysis.analysisIntoExcel("pred.xlsx", p, d, q, P, D, Q, m);
+                    logger.info("Команда выполнена. Файл АнализДанных.xlsx обновлён");
+                } catch (Exception e) {
+                    logger.error("Команда не распознана/неподходящие параметры", e);
                 }
-                case "getDoctors": {
+            } else if (cmd.hasOption("doctors")) {
+                try {
                     Analysis.doctorsToExcel("doc.xlsx");
-                    System.out.println("Команда выполнена. Файл АнализДокторов.xlsx обновлён");
-                    break;
+                    logger.info("Команда выполнена. Файл АнализДокторов.xlsx обновлён");
+                } catch (IOException e) {
+                    logger.error("Ошибка при выполнении команды: " + e.getMessage(), e);
                 }
-                case "forecast":{
-                    int p ,d, q, P, D, Q, m;
-                    try{
-                        p = Integer.parseInt(command[1]);
-                        d = Integer.parseInt(command[2]);
-                        q = Integer.parseInt(command[3]);
-                        P = Integer.parseInt(command[4]);
-                        D = Integer.parseInt(command[5]);
-                        Q = Integer.parseInt(command[6]);
-                        m = Integer.parseInt(command[7]);
-                        if(p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 3 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3){
-                            throw new Exception("");
-                        }
-                        Analysis.nextMonthForecastToExcel("pred.xlsx",p,d,q,P,D,Q,m);
-                    } catch (Exception e){
-                        System.out.println("Команда не распознана/неподходящие параметры");
-                        break;
-                    }
-                    System.out.println("Команда выполнена. Файл ПредсказаниеНаМесяц.xlsx обновлён");
-                    break;
-                }
-                case "getSchedule":{
-                    int num;
-                    try{
-                        num = Integer.parseInt(command[1]);
-                        if(num > 31 || num < 28){
-                            throw new Exception("");
-                        }
-                        GenerateSchedule.toExcel(num);
-                    } catch (Exception e) {
-                        System.out.println("Команда не распознана");
-                        break;
-                    }
-                    System.out.println("Команда выполнена. Файл РасписаниеВрачей.xlsx обновлён");
-                    break;
-                }
-                case "end":{
-                    System.out.println("Закрытие программы...");
-                    prog = false;
-                    break;
-                }
-                default:{
-                    System.out.println("Команда не распознана");
-                    break;
-                }
-            }
-        }
+            } else if (cmd.hasOption("forecast")) {
+                String[] forecastParams = cmd.getOptionValues("forecast");
+                try {
+                    int p = Integer.parseInt(forecastParams[0]);
+                    int d = Integer.parseInt(forecastParams[1]);
+                    int q = Integer.parseInt(forecastParams[2]);
+                    int P = Integer.parseInt(forecastParams[3]);
+                    int D = Integer.parseInt(forecastParams[4]);
+                    int Q = Integer.parseInt(forecastParams[5]);
+                    int m = Integer.parseInt(forecastParams[6]);
 
+                    if (p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 3 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3) {
+                        throw new Exception("");
+                    }
+                    Analysis.nextMonthForecastToExcel("pred.xlsx", p, d, q, P, D, Q, m);
+                    logger.info("Команда выполнена. Файл ПредсказаниеНаМесяц.xlsx обновлён");
+                } catch (Exception e) {
+                    logger.error("Команда не распознана/неподходящие параметры", e);
+                }
+            } else if (cmd.hasOption("schedule")) {
+                try {
+                    int num = Integer.parseInt(cmd.getOptionValue("schedule"));
+                    if (num > 31 || num < 28) {
+                        throw new Exception("");
+                    }
+                    GenerateSchedule.toExcel(num);
+                    logger.info("Команда выполнена. Файл РасписаниеВрачей.xlsx обновлён");
+                } catch (Exception e) {
+                    logger.error("Команда не распознана", e);
+                }
+            } else {
+                formatter.printHelp("schedule-app", options);
+            }
+        } catch (ParseException e) {
+            logger.error(e.getMessage(), e);
+            formatter.printHelp("schedule-app", options);
+        }
     }
 }
