@@ -1,7 +1,7 @@
 
 package org.timeseries.timeseriesutil;
 
-import org.matrix.InsightsMatrix;
+import org.timeseries.matrix.InsightsMatrix;
 
 public final class ForecastUtil {
 

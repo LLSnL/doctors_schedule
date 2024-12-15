@@ -1,7 +1,7 @@
 package org.timeseries.arima;
 
-import org.matrix.InsightsMatrix;
-import org.matrix.InsightsVector;
+import org.timeseries.matrix.InsightsMatrix;
+import org.timeseries.matrix.InsightsVector;
 import org.timeseries.arima.struct.ArimaParams;
 import org.timeseries.arima.struct.BackShift;
 import org.timeseries.timeseriesutil.ForecastUtil;

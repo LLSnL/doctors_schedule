@@ -1,6 +1,6 @@
 package org.timeseries.arima.struct;
 
-import org.matrix.InsightsVector;
+import org.timeseries.matrix.InsightsVector;
 import org.timeseries.timeseriesutil.Integrator;
 
 /**

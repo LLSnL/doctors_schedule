@@ -3,6 +3,7 @@ package org.parsers;
 import com.opencsv.CSVWriter;
 import javafx.util.Pair;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -54,12 +55,61 @@ public class Parsers {
         }
         writer.close();
     }
-    public static Pair<List<String>, List<List<Integer>>> predParse(String fileName) {
+
+    public static Pair<List<String>, List<String>> docParse(String filePath) {
         //инициализируем потоки
         InputStream inputStream = null;
         XSSFWorkbook workBook = null;
         try {
-            inputStream = new FileInputStream(fileName);
+            inputStream = new FileInputStream(filePath);
+            workBook = new XSSFWorkbook(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Sheet sheet = workBook.getSheetAt(0);
+        Iterator<Row> it = sheet.iterator();
+
+        Row headerRow = sheet.getRow(0);
+        List<String> columnNames = new ArrayList<>();
+
+        int a = headerRow.getLastCellNum();
+        for (int cellNum = 0; cellNum < 4; cellNum++) {
+            columnNames.add(headerRow.getCell(cellNum).getStringCellValue());
+        }
+
+        List<String> info = new ArrayList<>();
+        Row row = it.next();
+
+        //проходим по всему листу
+        while (it.hasNext()) {
+            row = it.next();
+            Iterator<Cell> cells = row.iterator();
+            Cell cell = cells.next();
+            if(cell.getCellType() == CellType.BLANK){
+                continue;
+            }
+
+            for(int cellNum = 0; cellNum < 4; cellNum++) {
+                if(cell.getCellType() != CellType.NUMERIC) {
+                    info.add(cell.getStringCellValue());
+                } else {
+                    info.add(Double.toString(cell.getNumericCellValue()));
+                }
+                cell = cells.next();
+            }
+
+        }
+        Pair<List<String>, List<String>> res;
+        res = new Pair<>(columnNames, info);
+
+        return res;
+    }
+    public static Pair<List<String>, List<List<Integer>>> predParse(String filePath) {
+        //инициализируем потоки
+        InputStream inputStream = null;
+        XSSFWorkbook workBook = null;
+        try {
+            inputStream = new FileInputStream(filePath);
             workBook = new XSSFWorkbook(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
