@@ -74,7 +74,7 @@ public class App {
                     int Q = Integer.parseInt(forecastParams[5]);
                     int m = Integer.parseInt(forecastParams[6]);
 
-                    if (p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 3 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3) {
+                    if (p < 0 || d < 0 || q < 0 || P < 0 || D < 0 || Q < 0 || m < 0 || p > 37 || d > 3 || q > 3 || P > 3 || D > 3 || Q > 3 || m > 3) {
                         throw new Exception("");
                     }
                     Analysis.nextMonthForecastToExcel("pred.xlsx", p, d, q, P, D, Q, m);
