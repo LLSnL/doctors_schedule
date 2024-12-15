@@ -88,7 +88,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>src.main.java.org.app.App</mainClass>
+              <mainClass>org.app.App</mainClass>
             </manifest>
           </archive>
         </configuration>
