@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/doctors_schedule.iml" filepath="$PROJECT_DIR$/.idea/doctors_schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/Code/schedule/poi-ooxml-full.iml" filepath="$PROJECT_DIR$/Code/schedule/poi-ooxml-full.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code/schedule/schedule-app.iml" filepath="$PROJECT_DIR$/Code/schedule/schedule-app.iml" />
     </modules>
   </component>
 </project>

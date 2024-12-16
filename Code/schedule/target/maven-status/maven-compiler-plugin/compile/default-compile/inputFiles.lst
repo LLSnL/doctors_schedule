@@ -1,21 +1,21 @@
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/struct/ArimaParams.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/Arima.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/app/App.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/matrix/InsightsMatrix.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/YuleWalker.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/struct/BackShift.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/struct/ForecastResult.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/schedule/GenerateSchedule.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/analysis/Analysis.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/schedule/WorkSchedules.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/schedule/Doctor.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/timeseriesutil/ForecastUtil.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/schedule/Module.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/matrix/InsightsVector.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/timeseriesutil/Integrator.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/ArimaSolver.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/parsers/MatrixToCSV.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/struct/ArimaModel.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/timeseries/arima/HannanRissanen.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/parsers/Parsers.java
-/Users/gorillaprettylord/miit/9_term/doctors_schedule/Code/schedule/src/main/java/org/schedule/WorkSchedule.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\schedule\WorkSchedule.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\schedule\GenerateSchedule.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\Arima.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\parsers\Parsers.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\ArimaSolver.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\matrix\InsightsVector.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\analysis\Analysis.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\struct\ForecastResult.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\app\App.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\HannanRissanen.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\struct\ArimaModel.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\struct\BackShift.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\schedule\Module.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\timeseriesutil\Integrator.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\matrix\InsightsMatrix.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\schedule\Doctor.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\timeseriesutil\ForecastUtil.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\struct\ArimaParams.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\timeseries\arima\YuleWalker.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\schedule\WorkSchedules.java
+D:\5 Курс\doctors_schedule\Code\schedule\src\main\java\org\parsers\MatrixToCSV.java
