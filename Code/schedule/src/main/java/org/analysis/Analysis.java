@@ -125,7 +125,7 @@ public class Analysis {
             leftAxis.setTitle("Кол-во исследований");
 
             XDDFDataSource<String> dataSource = XDDFDataSourcesFactory.fromStringCellRange((XSSFSheet) sheet,
-                    new CellRangeAddress(0, 4, 0, 0));
+                    new CellRangeAddress(0, 3, 0, 0));
 
             XDDFNumericalDataSource<Double> raw = XDDFDataSourcesFactory.fromNumericCellRange((XSSFSheet) sheet,
                     new CellRangeAddress(0, 0, 0, a.getValue().size()));
