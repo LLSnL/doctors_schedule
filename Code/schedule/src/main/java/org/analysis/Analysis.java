@@ -100,6 +100,14 @@ public class Analysis {
                 cell.setCellValue(forecasts[2][j]);
             }
 
+            ForecastResult forecastResult = Arima.forecast_arima(data, 1 , params);
+            row = sheet.createRow(4);
+            name = row.createCell(0);
+            name.setCellValue("Средняя квадратичная ошибка");
+            name = row.createCell(1);
+            name.setCellValue(forecastResult.getRMSE());
+
+
             XSSFDrawing drawing = (XSSFDrawing) sheet.createDrawingPatriarch();
             XSSFClientAnchor anchor = drawing.createAnchor(0, 0, 0, 0, 0, 6, 20, 35);
 
@@ -117,7 +125,7 @@ public class Analysis {
             leftAxis.setTitle("Кол-во исследований");
 
             XDDFDataSource<String> dataSource = XDDFDataSourcesFactory.fromStringCellRange((XSSFSheet) sheet,
-                    new CellRangeAddress(0, 4, 0, 0));
+                    new CellRangeAddress(0, 3, 0, 0));
 
             XDDFNumericalDataSource<Double> raw = XDDFDataSourcesFactory.fromNumericCellRange((XSSFSheet) sheet,
                     new CellRangeAddress(0, 0, 0, a.getValue().size()));
